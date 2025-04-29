@@ -178,5 +178,11 @@ export let GlobalPool: PersonalData[] = [
 		avatar:
 			'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb3b2453f-7b80-493b-a4f0-b825427e1921%2FIMG_0016.png?table=collection&id=b68928df-fdf1-4821-90f2-59a530d0e2e6&t=b68928df-fdf1-4821-90f2-59a530d0e2e6&width=800&cache=v2',
 		remark: '信息安全爱好者'
+	},
+	{
+		alias: 'baozongwi',
+		url: 'https://baozongwi.xyz/',
+		remark: '\u5929\u5730\u4E0D\u4EC1\uFF0C\u4EE5\u4E07\u7269\u4E3A\u520D\u72D7',
+		avatar: 'https://baozongwi.xyz/images/acvtar.jpg'
 	}
 ];
