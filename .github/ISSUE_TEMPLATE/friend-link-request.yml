@@ -7,7 +7,7 @@ assignees:
   - Esonhugh # 这里改成你的GitHub ID
 body:
   - type: input
-    id: name
+    id: alias
     attributes:
       label: your name
       placeholder: your name
@@ -21,14 +21,14 @@ body:
     validations:
       required: true
   - type: input
-    id: word
+    id: remark
     attributes:
       label: site description
       placeholder: site description
     validations:
       required: true
   - type: input
-    id: logo
+    id: avator
     attributes:
       label: your logo
       description: your logo or site favicon

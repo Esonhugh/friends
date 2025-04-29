@@ -27,11 +27,15 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
+      - uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/friend-link-request.yml # optional but recommended
+
       - name: Generate Friends Markdown
         run: |
-          export event_data=`cat ${GITHUB_EVENT_PATH}`
-          echo $event_data |base64 ; # for debug 
-          echo $event_data > ./friend.json
+          cat ${HOME}/issue-parser-result.json
+          cp ${HOME}/issue-parser-result.json ./friend.json
 
       - name: pnpm install
         run: pnpm install
