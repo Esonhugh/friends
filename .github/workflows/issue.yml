@@ -30,13 +30,14 @@ jobs:
       - name: Generate Friends Markdown
         run: |
           export event_data=`cat ${GITHUB_EVENT_PATH}`
+          echo $event_data ; # for debug 
           echo $event_data > ./friend.json
 
       - name: pnpm install
         run: pnpm install
 
       - name: pnpm issue helper
-        run: pnpm issue-helper ./friend.json
+        run: pnpm issue-helper ./friend.json && npx prettier --write .
 
       - name: Create Pull Request
         # reference: https://github.com/peter-evans/create-pull-request

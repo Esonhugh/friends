@@ -42,6 +42,7 @@
 	"type": "module",
 	"dependencies": {
 		"@floating-ui/dom": "1.5.3",
+		"fs": "0.0.1-security",
 		"ts-node": "^10.9.2",
 		"yaml": "^2.7.1"
 	}
