@@ -4,7 +4,6 @@ on:
     types: ['opened', 'reopened']
 
 env:
-  BLOG_REPO: esonhugh/friends # 博客仓库的地址，格式 username/repo
   TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 permissions: write-all
@@ -52,8 +51,8 @@ jobs:
           token: ${{ env.TOKEN }}
           branch: update-friend-links-from-issue
           branch-suffix: timestamp
-          title: 'feat: update friend links from issue(auto by bot)'
-          commit-message: 'feat: update friend links from issue(auto by bot)'
+          title: 'feat: ${{ github.actor }} update friend links from issue(auto by bot)'
+          commit-message: 'feat: ${{ github.actor }} update friend links from issue(auto by bot)'
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           delete-branch: true
