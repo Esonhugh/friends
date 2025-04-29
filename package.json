@@ -3,8 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"issue-helper": "ts-node ./helper.ts",
-		"test-issue-helper": "ts-node ./helper.ts ./test/friends.json && prettier --write ./src/lib/PersonalData.ts",
+		"issue-helper": "tsx ./helper.ts",
+		"test-issue-helper": "tsx ./helper.ts ./test/friends.json && prettier --write ./src/lib/PersonalData.ts",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -44,6 +44,7 @@
 		"@floating-ui/dom": "1.5.3",
 		"fs": "0.0.1-security",
 		"ts-node": "^10.9.2",
+		"tsx": "^4.19.4",
 		"yaml": "^2.7.1"
 	}
 }
