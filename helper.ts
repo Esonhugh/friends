@@ -42,6 +42,9 @@ function main(): number {
 
 			let PropertyList = [] as ts.PropertyAssignment[];
 			for (let key in friendObj) {
+                if (key === "message") {
+                    continue // skip message
+                }
 				console.log(`Processing key ${key}`);
 				// let keyProperty = factory.createStringLiteral(key);
 				let valueProperty = factory.createStringLiteral(friendObj[key]);
