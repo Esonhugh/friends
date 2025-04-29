@@ -28,7 +28,7 @@ body:
     validations:
       required: true
   - type: input
-    id: avator
+    id: avatar
     attributes:
       label: your logo
       description: your logo or site favicon
