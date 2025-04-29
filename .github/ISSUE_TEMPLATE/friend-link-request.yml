@@ -1,8 +1,8 @@
-name: Friend Link request 
-description: Creating friend link 
-title: "[Friend Link Request]"
-labels: 
-  - "Friend Request"
+name: Friend Link request
+description: Creating friend link
+title: '[Friend Link Request]'
+labels:
+  - 'Friend Request'
 assignees:
   - Esonhugh # 这里改成你的GitHub ID
 body:
