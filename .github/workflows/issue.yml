@@ -30,7 +30,7 @@ jobs:
       - name: Generate Friends Markdown
         run: |
           export event_data=`cat ${GITHUB_EVENT_PATH}`
-          echo $event_data ; # for debug 
+          echo $event_data |base64 ; # for debug 
           echo $event_data > ./friend.json
 
       - name: pnpm install
