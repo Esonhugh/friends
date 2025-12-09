@@ -190,5 +190,11 @@ export let GlobalPool: PersonalData[] = [
 		url: 'https://buutt3rf1y.github.io/',
 		remark: 'Hey Kong,Can you hear me?',
 		avatar: 'https://img.dkdun.cn/v1/2025/12/c9ecee707ed47139.jpg'
+	},
+	{
+		alias: 'Mnzn',
+		url: 'https://mnzn.me',
+		remark: 'Mnzn \u306E \u5C0F\u5C4B',
+		avatar: 'https://gravatar.com/avatar/580f31d623958c3eac3b9bce516a8667'
 	}
 ];
